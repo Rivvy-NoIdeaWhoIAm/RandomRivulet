@@ -1,0 +1,2 @@
+RandomRivulet does not directly store any information sent to it, although any messages sent inside of RandomRivulet's DMs will be sent to Reyvi/noideawhoiam3855 (<@1205957884991766628>) on Discord. RandomRivulet can not read messages sent inside of servers,
+and can not as well as will not store any data that could be used for any sort of identification outside of simple User IDs. User IDs are stored to be used for the leaderboards, but are not used for anything outside that.
