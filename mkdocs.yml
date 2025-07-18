@@ -1,0 +1,13 @@
+site_name: RandomRivulet
+
+plugins:
+  - offline
+  - search
+
+nav:
+  - Home: index.html
+
+site_url: ""
+docs_dir: "docs/en"
+site_dir: "dist/docs/en"
+use_directory_urls: False
