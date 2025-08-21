@@ -12,7 +12,7 @@ nextButton.addEventListener("click", () => {
     }
     nextButton.style.visibility = upage == mp - 1 ? "hidden" : "visible";
     prevButton.style.visibility = upage == 0 ? "hidden" : "visible";
-    readTextFile("/stuffforsite/info.json", update_uses);
+    readTextFile("./stuffforsite/info.json", update_uses);
 });
 
 prevButton.addEventListener("click", () => {
@@ -21,7 +21,7 @@ prevButton.addEventListener("click", () => {
     };
     prevButton.style.visibility = upage == 0 ? "hidden" : "visible";
     nextButton.style.visibility = upage == mp - 1 ? "hidden" : "visible";
-    readTextFile("/stuffforsite/info.json", update_uses);
+    readTextFile("./stuffforsite/info.json", update_uses);
 });
 
 var nextButtonP = document.getElementById("nextButtonP");
@@ -42,7 +42,7 @@ prevButtonP.addEventListener("click", () => {
     };
     prevButtonP.style.visibility = ppage == 0 ? "hidden" : "visible";
     nextButtonP.style.visibility = ppage == mp - 1 ? "hidden" : "visible";
-    readTextFile("/stuffforsite/info.json", update_uses);
+    readTextFile("./stuffforsite/info.json", update_uses);
 });
 
 var icons = {}
@@ -188,9 +188,9 @@ function compareFn(a, b) {
     return 0;
 }
 
-readTextFile("/stuffforsite/info.json", update_uses); // call it immediately upon site load
+readTextFile("./stuffforsite/info.json", update_uses); // call it immediately upon site load
 
-setInterval(readTextFile, 1000, "/stuffforsite/info.json", update_uses); // somehow figured out how to do the argument part on my own?? yippie
+setInterval(readTextFile, 1000, "./stuffforsite/info.json", update_uses); // somehow figured out how to do the argument part on my own?? yippie
 
 function readTextFile(file, callback) {
     var rawFile = new XMLHttpRequest();
@@ -225,9 +225,9 @@ function update_status(info){
     statusinfo.textContent = online ? "RandomRivulet is currently online." : "RandomRivulet is currently offline.";
 }
 
-readTextFile("/stuffforsite/updater.txt", update_status);
+readTextFile("./stuffforsite/updater.txt", update_status);
 
-setInterval(readTextFile, 495, "/stuffforsite/updater.txt", update_status); // i know i know but still don't do exactly 500ms since idk might cause things
+setInterval(readTextFile, 495, "./stuffforsite/updater.txt", update_status); // i know i know but still don't do exactly 500ms since idk might cause things
 
 var usetext = document.getElementById("uses");
 
@@ -235,9 +235,9 @@ function update_tuses(info){
     usetext.textContent = info + " fish reeled in";
 }
 
-readTextFile("/stuffforsite/uses.txt", update_tuses);
+readTextFile("./stuffforsite/uses.txt", update_tuses);
 
-setInterval(readTextFile, 200, "/stuffforsite/uses.txt", update_tuses);
+setInterval(readTextFile, 200, "./stuffforsite/uses.txt", update_tuses);
 
 var totaltext = document.getElementById("collected");
 var totalfish__ = 1;
@@ -249,7 +249,7 @@ function update_tot(info) {
 
 readTextFile("/stuffforsite/found.txt", update_tot);
 
-setInterval(readTextFile, 2000, "/stuffforsite/found.txt", update_tot);*/
+setInterval(readTextFile, 2000, "./stuffforsite/found.txt", update_tot);*/
 
 async function test(){
     document.writeln((await fetch("https://www.wikipedia.org/")).json());
