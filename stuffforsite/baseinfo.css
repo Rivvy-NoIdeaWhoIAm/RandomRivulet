@@ -1,0 +1,29 @@
+p.uses {
+    text-align: center;
+    padding: auto;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Rodondo';
+    src: local('/Rodondo.otf');
+    line-height: 10%;
+}
+
+p.collected {
+    text-align: center;
+    padding: auto;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Rodondo';
+    src: local('/Rodondo.otf');
+}
+
+a.privpolicy {
+    display: inline;
+}
+
+a.tos {
+    display: inline;
+    margin-left: 86%;
+}
