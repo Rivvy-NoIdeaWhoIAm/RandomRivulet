@@ -1,0 +1,149 @@
+.tableA {
+    margin-left: 5%;
+}
+
+.tableB {
+    margin-left: 28%;
+}
+
+.tableA,
+.tableB {
+    display: inline;
+    table {
+        border-collapse: collapse;
+        border: 2px solid rgb(140 140 140);
+        font-family: sans-serif;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        padding: 40px 20px;
+        table-layout: fixed;
+    }
+
+    caption {
+        caption-side: bottom;
+        padding: 1000px;
+        font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+        padding: 8px 1px;
+    }
+
+    th.value,
+    td.value {
+        border: 1px solid rgb(60 170 250);
+        padding: 10px 2px;
+        text-align: center;
+
+    }
+
+    th.name,
+    td.name {
+        border: 1px solid rgb(60 170 250);
+        padding: 10px 2px;
+        text-align: center;
+        width: 250px;
+        overflow: hidden;
+    }
+
+    th:first-of-type {
+        line-height: 4px;
+    }
+
+    td:last-of-type {
+        text-align: center;
+        padding: 8px 10px;
+    }
+
+    tbody>tr:nth-of-type(even) {
+        background-color: rgba(146, 226, 246, 0.675);
+        padding: 30px 10px;
+    }
+
+    tbody>tr:nth-of-type(odd) {
+        background-color: rgb(160, 192, 252, 0.675);
+        padding: 30px 10px;
+    }
+
+    tfoot th {
+        background-color: rgb(228 240 245);
+        text-align: center;
+        padding: 8px 10px;
+
+    }
+
+    tfoot td {
+        font-weight: bold;
+        padding: 8px 10px;
+        text-align: center;
+    }
+
+    tr img {
+        width: 10%;
+        text-align: left;
+        border-radius: 100%;
+        margin-right: 5%;
+        vertical-align: middle;
+    }
+
+    th.end,
+    td.end {
+        visibility: hidden;
+    }
+
+    .styled {
+        border: 1;
+        line-height: 2.5;
+        padding: 0 20px;
+        font-size: 1rem;
+        text-align: center;
+        color: #ffffff;
+        text-shadow: 1px 1px 1px #000000;
+        border-radius: 10px;
+        background-color: rgb(182 247 241);
+        background-image: linear-gradient(to top left,
+                rgb(0 0 0 / 0.2),
+                rgb(0 0 0 / 0.2) 30%,
+                rgb(0 0 0 / 0));
+        box-shadow:
+            inset 2px 2px 3px rgb(255 255 255 / 0.6),
+            inset -2px -2px 3px rgb(140 231 255 / 60%);
+    }
+
+    .styled:hover {
+        background-color: #acffcd;
+    }
+
+    .styled:active {
+        box-shadow:
+            inset -2px -2px 3px rgb(255 255 255 / 0.6),
+            inset 2px 2px 3px rgb(0 0 0 / 0.6);
+    }
+
+    p.p1 {
+        line-height: 1px;
+        margin-top: 0%;
+    }
+
+    p.p2 {
+        margin-bottom: 0%;
+        line-height: 1px;
+    }
+}
+
+p.tableuseinfo {
+    display: inline;
+    margin-left: 14%;
+    font-size: 25px;
+    font-family: 'Rodondo';
+    src: local('/Rodondo.otf');
+}
+
+p.tabletotalinfo {
+    display: inline;
+    margin-left: 46.5%;
+    font-size: 25px;
+    font-family: 'Rodondo';
+    src: local('/Rodondo.otf');
+}

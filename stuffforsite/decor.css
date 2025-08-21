@@ -1,0 +1,11 @@
+body {
+    background-image: linear-gradient(to top left,
+        rgb(193 255 240),
+        rgb(162 219 255),
+        rgb(208 255 235));
+    text-shadow:
+        -1px -1px 0 #ffffff,
+        1px -1px 0 #ffffff,
+        -1px 1px 0 #ffffff,
+        1px 1px 0 #ffffff;
+}

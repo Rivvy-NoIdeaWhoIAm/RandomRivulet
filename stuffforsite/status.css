@@ -1,0 +1,26 @@
+img.onlinestatusimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5%;
+    margin-bottom: -1%;
+    width: 2%;
+}
+
+p.onlinestatusinfo {
+    text-align: center;
+    font-family: 'Rodondo';
+    src: local('/Rodondo.otf');
+}
+
+img.randomfish {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0%;
+    width: 3%;
+    border-radius: 100%;
+    border-width: 1px;
+    border: solid;
+    border-color: black;
+}
